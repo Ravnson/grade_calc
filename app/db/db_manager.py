@@ -1,7 +1,7 @@
 import os
 import json
 
-path = 'app/grades/db/'
+path = 'app/db/'
 
 def get_classes():
     return get_resources(path + 'classes/')

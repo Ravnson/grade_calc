@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, url_for
 from app import app
 from app.forms import LoginForm
-from app.grades.db import db_manager
+from app.db import db_manager
 
 @app.route('/')
 @app.route('/index')
