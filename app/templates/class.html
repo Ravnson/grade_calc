@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table>
+  <tr>
+      <th>Student</th>
+      {% for l in layout %}
+      <th>{{ l }}</th>
+      {% endfor %}
+  </tr>
+  <tr>
+      {% for s in students %}
+      <td> {{ s[Name] }} </td>
+      {% for m in s[Noten].values %}
+      <td>{{ m }}</td>
+      {% e}
+      {% endfor %}
+  </tr>
+</table>
+
+{% endblock %}
